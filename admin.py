@@ -88,10 +88,10 @@ class Admin:
 
         while True:
             db = pymysql.connect(
-                host='us-cdbr-east-04.cleardb.com',
-                user='b1c96c8af48cba',
-                password='c13f73de',
-                database='heroku_805235abf2a3a56'
+                host='хост',
+                user='юзер',
+                password='пароль',
+                database='база данних'
             )
 
             curr_date = datetime.datetime.now().date()
@@ -307,15 +307,11 @@ class Admin:
 
     def __connect_database(self) -> None:
         self.db = pymysql.connect(
-            host='us-cdbr-east-04.cleardb.com',
-            user='b1c96c8af48cba',
-            password='c13f73de',
-            database='heroku_805235abf2a3a56'
+            host='хост',
+            user='юзер',
+            password='пароль',
+            database='база данних'
         )
 
     def __close_database(self) -> None:
         self.db.close()
-
-
-# admin = Admin()
-# admin.delete_teacher('wargkul')
