@@ -5,7 +5,7 @@ from admin import Admin
 
 import threading
 
-bot = Bot('1941908944:AAH-74UPpJW4ZcxUwx67lZdDTi_5Sib_S3o')
+bot = Bot('токен (id) чат-бота')
 dp = Dispatcher(bot)
 
 admin = Admin()
